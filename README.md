@@ -6,11 +6,13 @@ Para poder realizar este programa usamos una implementación de listas enlazadas
 * Maven
 * Git
 * Java
+* Heroku
+* CircleCi
 
 ## Instalación
 Para usar este programa debe abrir la consola (CMD) ir a la ubicación donde desee guardar el programa y ejecutar este comando:
 ```
-git clone https://github.com/Carlos96999/AREP-desviacionEstandar.git
+git clone https://github.com/Carlos96999/AREP-LAB-2.git
 ```
 
 ## Ejecución
@@ -45,6 +47,8 @@ Este laboratorio fue construido con las siguiente herramientas:
 * [Maven](https://maven.apache.org/)
 * [Java](https://www.java.com/es/)
 * [GIT](https://git-scm.com/)
+* [Heroku](https://dashboard.heroku.com/apps)
+* [CircleCi](https://circleci.com/)
 
 ## Licencia
 [Licencia **GNU General Public License v3.0**](https://github.com/Carlos96999/AREP-desviacionEstandar/blob/main/LICENSE)
