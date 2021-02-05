@@ -2,7 +2,7 @@
 En este laboratorio vamos a realizar un programa que nos permita calcular la desviación estandar de una tabla de datos, los datos los podremos encontrar en un archivo de tipo texto (txt), si se desea, estos datos los pueden reemplazar.
 Para poder realizar este programa usamos una implementación de listas enlazadas simples (LinkedList en la que cada dato apunta a su nodo siguiente), que nos darán los datos sobre los cuales deseamos saber la desviacion extrayendo esta información del archivo de texto.
 
-[![CircleCI](https://circleci.com/Carlos96999>.svg?style=svg&circle-token=788359b9b683d387f30ee57edc57592fc57cd615)](https://app.circleci.com/pipelines/github/Carlos96999/AREP-LAB-2)
+[![CircleCI](https://circleci.com/gh/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/Carlos96999/AREP-LAB-2)
 
 ## Prerequisitos
 * Maven
