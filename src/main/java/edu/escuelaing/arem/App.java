@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -14,10 +14,10 @@ import spark.Response;
 public class App 
 {	
 	/*
-	 * Procedemos a sacar la desviación estandar con la formula depejando alfa
+	 * Procedemos a sacar la desviacion estandar con la formula depejando alfa
 	 * @param datos Una lista enlazada con los datos de la tabla
 	 * @param datosCopia Una lista enlazada con los datos de la tabla como copia
-	 * @return desviacion Resultado de la operación realizada
+	 * @return desviacion Resultado de la operacion realizada
 	 */
 	public static String[] sacarDesviacion(ListaEnlazada datos, ListaEnlazada datosCopia) 
 	{
@@ -27,7 +27,6 @@ public class App
 		String[] respuesta = new String[2];
 		respuesta[0] = df.format(desviacion.getDesviacion());
 		respuesta[1] = df.format(desviacion.getMedia());
-		//return df.format(desviacion.getDesviacion());
 		return respuesta;
 	}
 	
@@ -51,7 +50,7 @@ public class App
 		return datos;
 	}
 	
-	/**
+	/*
 	 * Este metodo sera el encargado de iniciar el proceso, al abrir en el navegador el puerto 4567 (Puerto de Spark).
 	 * @param args - Iniciara el Proceso.
 	 */
@@ -62,7 +61,7 @@ public class App
         
     }
     
-    /**
+    /*
      * Este metodo se encarga de devolver si el puerto registrado esta disponible o no.
      * @return retorna el numero del puerto.
      */
@@ -80,17 +79,17 @@ public class App
     	= "<!DOCTYPE html>"
                 + "<html>"
     				+ "<head>"
-    					+ "<title>AREP Laboratorio 2 Desviación estandar</title>"
+    					+ "<title>AREP Laboratorio 2 Desviacion estandar</title>"
     				+ "</head>"
     				+ "<body bgcolor=#f4b24d>"
     				+ "<center>"
     					+ "<div style=\"padding:20px; width:100%; background:#f4b24d; color:white; font-size:300%; position:absolute ; top:0px ; left:0px\">"
-    						+ "Desviación Estandar "
+    						+ "Desviacion Estandar "
     					+ "</div>"
     					+ "<form action=\"/respuesta\">"
     						+ "<div style=\"padding:45px; width:93.8%; background:#f4b24d; color:white; font-size:150%; position:absolute ; top:100px ; left:0px\">"
     							+ "<div>"
-    								+ "Digite los números que desea agregar a la lista enlazada para proceder con la operación"
+    								+ "Digite los numeros que desea agregar a la lista enlazada para proceder con la operacion"
     								+ " <br>"
     								+ "Estos datos deben estar separados por comas ',' "
     							+ "</div>"
@@ -132,7 +131,7 @@ public class App
 		= "<!DOCTYPE html>"
 				+ "<html>"
 					+ "<head>"
-						+ "<title>AREP Laboratorio 2 Desviación estandar </title>"
+						+ "<title>AREP Laboratorio 2 Desviacion estandar </title>"
 					+ "</head>"
 					+ "<body bgcolor=#f4b24d>"
 						+ "<center>"
@@ -140,10 +139,10 @@ public class App
 								+ "Datos"
 								+ "</div>"
 							+ "<div style=\"padding:30px; width:96.9%; background:#f6e91f; color:white; font-size:150%; position:absolute ; top:100px ; left:0px\">"
-								+ "Los números dentro de la lista enlazada son: " + numeros 
+								+ "Los numeros dentro de la lista enlazada son: " + numeros 
 							+ "</div>"
 							+ "<div style=\"padding:30px; width:96.9%; background:#f6e91f; color:white; font-size:150%; position:absolute ; top:200px ; left:0px\">"
-								+ "La Media del Conjunto de Números es: "
+								+ "La Media del Conjunto de Numeros es: "
 								+ desviacionEstandar[1]
 							+ "</div>"
 							+ "<div style=\"padding:30px; width:96.9%; background:#f6e91f; color:white; font-size:150%; position:absolute ; top:300px ; left:0px\">"
@@ -158,15 +157,7 @@ public class App
 					+ "</body>"
 				+ "</html>";
 	
-	return pageResponse;
-}
-	/*
-	 * Método principal
-	 *
-    public static void main( String[] args )
-    {
-    	ListaEnlazada datos = leerArchivo("archivo.txt");
-    	ListaEnlazada datosCopia = leerArchivo("archivo.txt");
-    	String res = sacarDesviacion(datos, datosCopia);
-    }*/
+		return pageResponse;
+	}
+
 }

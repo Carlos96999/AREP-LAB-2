@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -18,7 +18,7 @@ public class LecturaArchivo
     
     /*
      * Leemos el archivo para obtener los datos
-     * @param archivo ubicación del archivo
+     * @param archivo ubicacion del archivo
      * @return datos Lista enlazada con los datos de la tabla (archivo de texto)
      */
     public ListaEnlazada leerArchivo(String archivo) 

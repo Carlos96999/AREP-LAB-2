@@ -1,17 +1,17 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem;
 
 import java.util.ArrayList;
 
 /*
- * Clase de la formula de desviación estandar
+ * Clase de la formula de desviacion estandar
  */
 public class DesviacionEstandar 
 {
 	private double sumatoria; 	//Sumatoria de xi (datos de la tabla)
 	private int i;			//Indice donde esta el valor x
-	private int x;			//Valor que se encuentra en la posición i de la tabla
+	private int x;			//Valor que se encuentra en la posicion i de la tabla
 	private int n;			//Cantidad de valores en la tabla
-	private double alfa;		//Alfa de la desviación estandar
+	private double alfa;		//Alfa de la desviacion estandar
 	private double media;
 	
 	/*
@@ -28,7 +28,7 @@ public class DesviacionEstandar
 	}
 
 	/*
-	 * Inicio de la operación enviando los datos
+	 * Inicio de la operacion enviando los datos
 	 * @param datos Lista enlazada con los datos de la tabla
 	 */
 	public void datos(ListaEnlazada datos, ListaEnlazada datosCopia) 
@@ -37,7 +37,7 @@ public class DesviacionEstandar
 	}
 	
 	/*
-	 * Realizamos la operación de la formula
+	 * Realizamos la operacion de la formula
 	 * @param datos Lista enlazada con los datos de la tabla
 	 */
 	public void operacion(ListaEnlazada datos, ListaEnlazada datosCopia)
@@ -85,7 +85,7 @@ public class DesviacionEstandar
 	}
 	
 	/*
-	 * Calculamos la raíz para conocer el valor de alfa
+	 * Calculamos la raiz para conocer el valor de alfa
 	 * @param sumatoria La sumatoria total de la formula (xi-xPromedio)**2
 	 * @param n Cantidad de datos en la tabla
 	 * @return res
@@ -97,7 +97,7 @@ public class DesviacionEstandar
 	}
 	
 	/*
-	 * Obtenemos el resultado de la desviación estandar
+	 * Obtenemos el resultado de la desviacion estandar
 	 * @return alfa
 	 */
 	public double getDesviacion() 

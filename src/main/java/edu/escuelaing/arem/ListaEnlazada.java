@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem;
 
 /*
  * Nuestra (LinkedList)
@@ -52,7 +52,7 @@ public class ListaEnlazada
     
     /*
      * Sacamos los datos de la lista uno por uno
-     * @return valor Último valor de la lista
+     * @return valor Ultimo valor de la lista
      */
     public double extraer ()
     {
